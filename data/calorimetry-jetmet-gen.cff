@@ -10,10 +10,7 @@
   include "RecoJets/JetProducers/data/GenJetMcone5.cfi"
   include "RecoJets/JetProducers/data/GenJetMcone7.cfi"
   include "RecoJets/JetProducers/data/GenJetIcone5.cfi"
-  module genMet =  METProducer {
-    string src = "genCandidates"
-    string METType = "boh"
-  }
+  include "RecoMET/METProducers/data/GenMET.cfi"
 
-  sequence caloJetMetGen = { genCandidates & ktGenJets & midPointCone5GenJets & midPointCone7GenJets & iterativeCone5GenJets & genMet }
+  sequence caloJetMetGen = { genCandidates & ktGenJets & midPointCone5GenJets & midPointCone7GenJets & iterativeCone5GenJets & genCandidatesForMET & genMet }
 
