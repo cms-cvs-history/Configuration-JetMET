@@ -12,5 +12,5 @@
   include "RecoJets/JetProducers/data/GenJetIcone5.cfi"
   include "RecoMET/METProducers/data/GenMET.cfi"
 
-  sequence caloJetMetGen = { genCandidates & ktGenJets & midPointCone5GenJets & midPointCone7GenJets & iterativeCone5GenJets & genCandidatesForMET & genMet }
+  sequence caloJetMetGen = { (genCandidates , (ktGenJets & midPointCone5GenJets & midPointCone7GenJets & iterativeCone5GenJets)) & (genCandidatesForMET , genMet) }
 
