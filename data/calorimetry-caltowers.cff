@@ -15,7 +15,7 @@
 
 #  include "RecoLocalCalo/CaloTowersCreator/data/calocandidatemaker.cfi"
  module caloTowers = CaloTowerCandidateCreator {
-          InputTag src = 'towerMaker'
+          InputTag src = towerMaker
           double minimumEt = -1
           double minimumE = -1
   }
