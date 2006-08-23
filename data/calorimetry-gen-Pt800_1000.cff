@@ -1,4 +1,4 @@
-# $Id: calorimetry-gen-Zprime_Dijets_700.cff,v 1.2 2006/08/21 20:52:36 fedor Exp $
+# $Id: calorimetry-gen-Pt800_1000.cff,v 1.1 2006/08/23 18:10:34 fedor Exp $
 # Author: R. Harris
 # Date: Aug 23, 2006
 #
@@ -32,7 +32,7 @@
      {
        # these two parameters define pt hat bin range
         'CKIN(3)=800.               !(D=0. GeV)  minimum pt hat for hard interactions',
-        'CKIN(4)=1000.               !(D=-1. GeV for no maximum) maximum pt hat for hard interactions'
+        'CKIN(4)=1000.               !(D=-1. GeV for no maximum) maximum pt hat for hard interactions',
 
        # these parameters are reasonable common setup
         'MSEL=1                     ! QCD hight pT processes (ISUB = 11, 12, 13, 28, 53, 68)',
@@ -52,7 +52,7 @@
         'PMAS(5,1)=4.2              !mass of b quark',
         'PMAS(6,1)=175.             !mass of top quark',
         'PMAS(23,1)=91.187          !mass of Z',
-        'PMAS(24,1)=80.22           !mass of W',
+        'PMAS(24,1)=80.22           !mass of W'
      }
     }
    }
