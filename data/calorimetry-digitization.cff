@@ -13,7 +13,7 @@
   include "Geometry/CaloEventSetup/data/CaloGeometry.cfi"
 
   # HCAL calibrations
-  include "CalibCalorimetry/HcalPlugins/data/hardwired_conditions.cfi"
+  include "CalibCalorimetry/HcalPlugins/data/default_hcal_conditions.cfi"
 
   # hcal digitization
   include "SimCalorimetry/HcalSimProducers/data/hcaldigi.cfi"
