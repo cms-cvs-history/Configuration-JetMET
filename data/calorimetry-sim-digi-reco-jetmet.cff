@@ -1,0 +1,28 @@
+// calibrations
+include "Configuration/StandardSequences/data/FakeConditions.cff"
+
+// simulation
+include "SimG4Core/Configuration/data/SimG4Core.cff"
+// no pilup
+include "SimGeneral/MixingModule/data/mixNoPU.cfi"
+// digitization
+include "SimCalorimetry/Configuration/data/SimCalorimetry.cff"
+// reconstruction
+include "RecoLocalCalo/Configuration/data/RecoLocalCalo.cff"
+// jets
+include "RecoJets/Configuration/data/RecoJets.cff"
+// met
+include "RecoMET/Configuration/data/RecoMET.cff"
+// jet corrections
+include "JetMETCorrections/MCJet/data/JetCorrections.cff"
+// MET corrections
+  include "JetMETCorrections/Type1MET/data/MetType1Corrections.cff"
+
+sequence caloSimDigiRecoJetMet = {
+   g4SimHits, mix, 
+   calDigi, 
+   calolocalreco, caloTowersRec, 
+   recoJets,  recoGenJets,
+   metreco,
+   JetCorrections, MetType1Corrections
+}
