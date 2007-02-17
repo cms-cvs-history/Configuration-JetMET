@@ -1,4 +1,3 @@
-  include "JetMETCorrections/MCJet/data/JetCorrections.cff"
-  include "JetMETCorrections/Type1MET/data/MetType1Corrections.cff"
+include "JetMETCorrections/Modules/data/JetMETCorrections.cff"
 
-  sequence caloJetMetCorrections = { JetCorrections, MetType1Corrections }
+  sequence caloJetMetCorrections = { JetMETCorrections }
