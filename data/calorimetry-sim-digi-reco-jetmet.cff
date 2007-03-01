@@ -11,6 +11,7 @@ include "SimCalorimetry/Configuration/data/SimCalorimetry.cff"
 include "RecoLocalCalo/Configuration/data/RecoLocalCalo.cff"
 // jets
 include "RecoJets/Configuration/data/RecoJets.cff"
+include "RecoJets/Configuration/data/RecoGenJets.cff"
 // met
 include "RecoMET/Configuration/data/RecoMET.cff"
 // jet/met corrections

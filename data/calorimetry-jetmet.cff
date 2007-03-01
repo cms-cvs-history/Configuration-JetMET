@@ -1,4 +1,4 @@
-include "JetMETCorrections/Modules/data/JetMETCorrections.cff"
+include "RecoJets/Configuration/data/RecoJets.cff"
+include "RecoJets/Configuration/data/RecoGenJets.cff"
 
-
-  sequence caloJetMet = { JetMETCorrections }
+  sequence caloJetMet = { recoJets,  recoGenJets }
