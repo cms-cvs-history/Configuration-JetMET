@@ -1,13 +1,11 @@
-# $Id: calorimetry-gen-Pt800_1000.cff,v 1.2 2006/08/23 20:37:57 fedor Exp $
+# $Id: calorimetry-gen-Pt800_1000.cff,v 1.3 2007/04/06 11:40:44 rahatlou Exp $
 # Author: R. Harris
 # Date: Aug 23, 2006
 #
 # Generic QCD production for particular pt hat range
 #
-
    source = PythiaSource
    {
-      untracked int32 maxEvents = 1
       untracked bool pythiaVerbosity = false
 
       PSet PythiaParameters =
