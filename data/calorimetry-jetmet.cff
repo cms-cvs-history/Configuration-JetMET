@@ -1,4 +1,4 @@
 include "RecoJets/Configuration/data/RecoJets.cff"
-include "RecoJets/Configuration/data/RecoGenJets.cff"
+include "RecoMET/Configuration/data/RecoMET.cff"
 
-  sequence caloJetMet = { recoJets,  recoGenJets }
+  sequence caloJetMet = { recoJets & metreco}
