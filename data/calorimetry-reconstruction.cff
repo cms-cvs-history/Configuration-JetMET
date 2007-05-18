@@ -1,3 +1,4 @@
+include "Geometry/CMSCommonData/data/cmsIdealGeometryXML.cfi" 
 // calibrations
 include "Configuration/StandardSequences/data/FakeConditions.cff"
 
