@@ -1,0 +1,2 @@
+include "CalibCalorimetry/Configuration/data/Hcal_FakeConditions.cff"
+include "CalibCalorimetry/Configuration/data/Ecal_FakeConditions.cff"
