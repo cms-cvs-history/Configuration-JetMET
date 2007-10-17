@@ -1,5 +1,6 @@
 // calibrations
-include "Configuration/StandardSequences/data/FakeConditions.cff"
+#include "Configuration/StandardSequences/data/FakeConditions.cff"
+include "Configuration/JetMET/data/CaloConditions.cff"
   // no pilup
 include "SimGeneral/MixingModule/data/mixNoPU.cfi"
 // digitization

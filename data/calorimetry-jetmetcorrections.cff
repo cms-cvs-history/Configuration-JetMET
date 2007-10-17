@@ -1,3 +1,3 @@
-include "JetMETCorrections/Modules/data/JetMETCorrections.cff"
+include "JetMETCorrections/Configuration/data/MCJetCorrections152.cff"
 
-  sequence caloJetMetCorrections = { JetMETCorrections }
+  sequence caloJetMetCorrections = { MCJetCorrections }

@@ -14,13 +14,3 @@
     }
     untracked int32 Verbosity = 0 # set to 1 (or greater)  for printouts
   }
-
-   # event vertex smearing - applies only once (internal check)
-   # Note : all internal generatoes will always do (0,0,0) vertex
-   #
-   include "IOMC/EventVertexGenerators/data/VtxSmearedGauss.cfi"
-   replace VtxSmeared.SigmaX = 0.
-   replace VtxSmeared.SigmaY = 0.
-   replace VtxSmeared.SigmaZ = 0.
-
-sequence generator = {VtxSmeared}

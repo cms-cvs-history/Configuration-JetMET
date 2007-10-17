@@ -1,4 +1,4 @@
-# $Id: calorimetry-gen-Zprime_Dijets_700.cff,v 1.4 2007/05/05 02:38:05 wmtan Exp $
+# $Id: calorimetry-gen-Zprime_Dijets_700.cff,v 1.5 2007/05/16 19:27:41 fedor Exp $
 # Author: R. Harris
 # Date: 6/9/06
 #
@@ -79,13 +79,4 @@
       }
    }
 
-   # event vertex smearing - applies only once (internal check)
-   # Note : all internal generatoes will always do (0,0,0) vertex
-   #
-   include "IOMC/EventVertexGenerators/data/VtxSmearedGauss.cfi"
-   replace VtxSmeared.SigmaX = 0.
-   replace VtxSmeared.SigmaY = 0.
-   replace VtxSmeared.SigmaZ = 0.
-
-sequence generator = {VtxSmeared}
 
