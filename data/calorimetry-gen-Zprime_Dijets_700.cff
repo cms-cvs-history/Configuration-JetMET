@@ -1,9 +1,11 @@
-# $Id: calorimetry-gen-Zprime_Dijets_700.cff,v 1.5 2007/05/16 19:27:41 fedor Exp $
+# $Id: calorimetry-gen-Zprime_Dijets_700.cff,v 1.6 2007/10/17 19:04:58 fedor Exp $
 # Author: R. Harris
 # Date: 6/9/06
 #
 # JetMET integration testing file for 700 GeV Z prime decaying to dijets.
 #
+include "GeneratorInterface/Pythia6Interface/data/pythiaDefault.cff"
+
    source = PythiaSource
    {
       untracked bool pythiaVerbosity = false
@@ -22,7 +24,7 @@
 
          # Default (mostly empty - to keep PYTHIA default) card file
          # Name of the set is "pythiaDefault"
-         include "GeneratorInterface/Pythia6Interface/data/pythiaDefault.cff"
+         using pythiaDefaultBlock
 
 
          # User cards - name is "myParameters"
