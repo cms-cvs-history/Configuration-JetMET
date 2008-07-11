@@ -1,3 +1,0 @@
-include "SimG4Core/Configuration/data/SimG4Core.cff"
-
-  sequence simulation = { g4SimHits }
