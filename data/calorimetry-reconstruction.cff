@@ -1,8 +1,0 @@
-include "Geometry/CMSCommonData/data/cmsIdealGeometryXML.cfi" 
-// calibrations
-#include "Configuration/StandardSequences/data/FakeConditions.cff"
-include "Configuration/JetMET/data/CaloConditions.cff"
-
-include "RecoLocalCalo/Configuration/data/RecoLocalCalo.cff"
-                                                 
-  sequence caloReco = { calolocalreco }
