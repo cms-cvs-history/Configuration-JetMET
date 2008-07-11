@@ -1,5 +1,0 @@
-include "RecoJets/Configuration/data/RecoJets.cff"
-include "RecoMET/Configuration/data/RecoMET.cff"
-
-#  sequence caloJetMet = { recoJets & metreco}
-  sequence caloJetMet = { recoJets }
