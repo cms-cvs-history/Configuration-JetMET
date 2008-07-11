@@ -1,7 +1,0 @@
-  include "PhysicsTools/HepMCCandAlgos/data/genParticles.cfi"
-  include "RecoJets/Configuration/data/GenJetParticles.cff"
-  include "RecoJets/Configuration/data/RecoGenJets.cff"
-  include "RecoMET/Configuration/data/GenMETParticles.cff"
-  include "RecoMET/Configuration/data/RecoGenMET.cff"
-#  sequence caloJetMetGen = { (genJetParticles, recoGenJets) & (genMETParticles, recoGenMET) }
-  sequence caloJetMetGen = { genParticles, (genJetParticles, recoGenJets) }
